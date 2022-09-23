@@ -1,0 +1,3 @@
+*.pickle
+64x3-CNN.model
+logs
