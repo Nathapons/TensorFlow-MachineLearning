@@ -12,7 +12,8 @@ CATEGORIES = ['Cat', 'Dog']
 
 try:  
     model = tf.keras.models.load_model("64x3-CNN.model")
-    prediction = model.predict([prepare('C:\\Users\\SWD\Desktop\\LearnProgram\\TensorFlow\\Cat_test\\cat8.jpg')])
+    prediction = model.predict([prepare('C:\\Users\\SWD\Desktop\\LearnProgram\\TensorFlow\\Cat_test\\cat5.jpg')])
+    print(f'{prediction[0][0] = }')
     print(f'Machine answer: {CATEGORIES[int(prediction[0][0])]}')
 except Exception as e:
     print(f'{str(e) = }')
